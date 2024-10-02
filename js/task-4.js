@@ -10,7 +10,10 @@ function handlerSubmit(event) {
     alert("All form fields must be filled in");
     return;
   }
-
-  console.log(`Email: ${email}, Password: ${password}`);
+  const formInfo = {
+    email: email,
+    password: password
+};
+  console.log(formInfo);
   form.reset();
 }
